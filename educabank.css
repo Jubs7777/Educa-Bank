@@ -1,0 +1,235 @@
+/*Configuração Padrão de início*/
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/*Chamamos o body para limitar o tamanho da altura e tamanho da página*/
+body {
+    height: 100vh; /*Altura*/
+    width: 100vw; /*Lagura*/
+}
+
+header { /*Chamamos nosso Header para estilização*/ 
+    background-color:#1b263b; /*Cor de fundo*/
+    padding: 10vh; /*ajustamos o tamanho do preenchimento*/
+}
+
+.menu-header { /*Aqui é onde estão armazenados nossas listas do Header*/
+    display: flex; /*Usamos para jogar os itens lado a lado*/
+    justify-content: end; /*Aqui justificamos os itens desta lista para  o fim do Header*/
+    flex-wrap: wrap; /*Usado para informar que os itens podem quebrar em telas menores*/
+}
+
+.menu-header > li > a { /*Aqui sabemos que dentro da nossa LI existe uma TAG de Link "a" */
+   color: white; /*Cor da letra*/
+   text-decoration: none; /*Desabilitando a decoração dos textos de Link*/
+   font-size: 13px; /*Tamanho da letra*/
+}
+
+.menu-header > li > a:hover { /*Efeito ao passar o cursor*/
+    color: #415a77; /*Habilitando uma cor ao passar o mouse*/
+    transition: 0.8s; /*Adicionamos aqui uma transição*/
+    
+}
+.menu-header > li { /*Chamamos nossas Li diretamente para espaça-las*/
+    margin-left: 20px; /*Margem a esquerda para espaçamento*/
+}
+
+
+#sessao { /*Aqui chamamos nosso primeiro ID para estilização*/
+    padding: 30vh; /*Atribuimos um tamanho de preenchimento*/
+    background: linear-gradient(180deg, #899597 8.33%, #0d1b2a) 100%; /*Uma cor com Degradê*/
+    flex-wrap: wrap; /*Usado para informar que os itens podem quebrar em telas menores*/
+}
+
+
+#sessao > h1 { /*Alterando nosso Título*/
+    font-size: 45px; /*Tamanho da letra*/
+    color: rgba(0, 0, 0, 0.712); /*Cor da letra */
+}
+
+#sessao > p { /*Alterando nosso Paragráfo dentro da nossa primeira ID*/
+    font-size: 40px; /*Tamanho da letra*/
+
+}
+
+
+#sessao > button { /*Chamamos nosso Button que está dentro dessa primeira sessão*/
+    padding: 20px; /*Tamanho do preenchimento interno do botão*/
+    border-radius: 50px; /*Borda arredondada do botão*/
+    width: 20vw; /*Tamanho lateral do botão (largura)*/
+    color: #034078; /*Cor da letra*/
+    border-color: #1b263b; /*Cor da borda*/
+    margin: 30px; /*Margem em volta do Button*/
+    font-size: 15px; /*Tamanho da letra dentro do button*/
+}
+
+#sessao > button:hover { /*Efeito ao passar o cursor */
+    background-color:#415a77; /*Atribuimos a cor que ficará*/
+    color: white; /*Cor da letra que irá se tornar ao passar o cursos*/
+    border-color: white; /*cor da borda ao passar o cursor*/
+    transition: 0.8s; /*Adicionamos aqui uma transição*/
+    cursor: pointer; /*mostrado quando o ponteiro do mouse está sobre um elemento*/
+    }
+
+
+    #app > div > button { /*Aqui chamamos nosso botão para estilização*/
+        padding: 20px; /*Preenchimento do nosso botão*/
+        border-radius: 50px; /*Arredondamento da borda do botão*/
+        width: 20vw; /*Ajustamos a largura do botão*/
+        color: #415a77; /*Aqui atribuimos uma cor a letra do botão*/
+        border-color: #1b263b; /*Cor da borda*/
+        margin: 30px; /*Margem em volta do Button*/
+        font-size: 15px; /*Tamanho da letra dentro do Button*/
+    }
+    
+    
+    #app > div > p{ /*Chamamos nosso Parágrafo para estilização*/
+        font-size: 43px; /*Alteração do tamanho da letra*/
+    }
+    
+    #app > div > button:hover{ /*Aqui chamamos nosso botão para estilização ao passar o Cursor*/
+        background-color: #415a77; /* Cor de fundo */
+        color: white; /*Cor da letra*/
+        border-color: white; /*Cor da borda*/
+        transition: 0.8s; /*Adicionamos aqui uma transição*/
+        cursor: pointer; /*mostrado quando o ponteiro do mouse está sobre um elemento*/
+    }
+    
+
+    #app > div > img { /*Imagem que está dentro da nossa segunda Section*/
+        width: 30vw; /*Lagura da nossa img*/
+        height: 60vh; /*Altura da nossa img*/
+        margin-top: -70px; /*Margem a Direita*/
+    }
+
+    #app {
+        padding: 30vh; /*Preenchimento da section*/
+        background-color: #e0e1dd; /* Cor de fundo da section*/
+        display: flex; /*Jogando os itens lado a lado*/
+        justify-content: space-between; /*Justificando o conteudo espaçamento inicial ao final*/
+        flex-wrap: wrap; /*Adaptando a sessão para quebrar em telas menenores*/
+    }
+
+    
+    #container { /*Aqui chamamos nossa terceira section da página*/
+        padding: 30vh; /*Atribuimos um preenchimento*/
+        background-color: #e0e1dd; /*Cor de fundo*/
+        flex-wrap: wrap; /*Usado para informar que os itens podem quebrar em telas menores*/
+    }
+    
+    #container > h2 { /*Chamamos nosso H2 para estilização*/
+        font-size: 40px; /*Tamanho da letra*/
+        margin-top: -20rem; /*Margem superior*/
+        color: #1b263b; /*Cor da letra*/
+        text-align: center; /*Alinhamento do texto ao centro*/
+    }
+
+    #container  p {
+        font-size: 20px; /*Tamanho da letra*/
+        margin-top: 30px; /*Margem superior*/
+        color: rgba(0, 0, 0, 0.697); /*Cor da letra*/
+        text-align: justify;
+    }
+
+    #container .text1 { /*Aqui chamamos nosso primeiro "p"*/
+        text-align: center; /*Alinhamos o mesmo ao centro*/
+    
+    }
+    
+    #container > button { /*Aqui estamos chamando nosso button para estilização*/
+        padding: 20px; /*Tamanho do preenchimento*/
+        border-radius: 50px; /*Arredondamento das bordas*/
+        width: 15vw; /*Largura do botão*/
+        color: #415a77; /*Cor da letra*/
+        border-color: #1b263b;  /*Cor da borda*/
+        margin: 60px; /*Margem externa*/
+        font-size: 15px; /*Tamanho da letra*/
+    }
+    
+    #container > button:hover { /*Aplicando a estilização ao passar o mouse*/
+        background-color: #415a77; /*Cor de fundo*/
+        color: white; /*Cor da letra*/
+        border-color: white; /*Cor da borda*/
+        transition: 0,8s; /*Tempo de transição*/
+    }
+
+    #container > img {  /*Chamando nossa Img da Section para estilização*/
+        width: 50vw; /*Largura da imagem*/
+        margin-top: 30px; /*Distancia da Margem superior*/
+        margin-left: 10vw; /*Distancia da Margem a esquerda*/ 
+    }
+
+    .line { /*Aqui chamamos nossa class onde armazena a linha*/
+        margin:0 auto; /*Habilitando a linha a centro deixando as laterais automaticas.    Inferior e superior em 0*/
+        width: 70%; /*Lagura da linha*/
+    }
+
+
+    #container-cofre {
+        background: linear-gradient(180deg, #899597 8.33%, #0d1b2a) 100%; /*Uma cor com Degradê*/;
+        background-position: center;
+        background-attachment: fixed;
+        height: 50rem;  /*Altura*/               
+        display: flex; /*Jogando os itens lado a lado*/
+        align-items: center; /*Alinhar no centro*/
+        flex-wrap: wrap; /*Adaptando a sessão para quebrar em telas menenores*/
+    }
+    
+    #conteiner-cofre > div > img {
+    width: 19vw; /*Largura*/
+    margin-left: 25rem; /*Distancia da Margem a esquerda*/ 
+    margin-top: 8rem; /*Distancia da Margem superior*/
+    flex-wrap: wrap; /*Adaptando a sessão para quebrar em telas menenores*/
+    }
+    
+    #container-cofre > div > h2 {
+        color: white; /*Cor da letra*/
+        font-size: 25px; /*Tamanho da letra*/
+        margin-left: 20rem; /*Distancia da Margem a esquerda*/ 
+        margin-top: 2rem;  /*Distancia da Margem superior*/
+        text-align: center; /*Alinhando o texto ao centro*/
+    }
+
+    #container-cofre > div > p {
+        font-size: 20px;  /*Tamanho da letra*/
+        margin-top: 30px; /*Distancia da Margem superior*/
+        color: rgba(0, 0, 0, 0.697); /*Cor da letra*/
+        text-align:center; /*Alinhando o texto ao centro*/
+        margin-left: 20rem; /*Distancia da Margem a esquerda*/
+    }
+
+    footer {
+        padding: 13vh; /*Preenchimento do Rodapé*/
+        background-color: #1b263b; /*Cor de fundo*/
+        text-align: center; /*Alinhando o texto ao centro*/
+    }
+
+    footer > img {
+        width: 30rem; /*Largura da imagem*/
+        height: 7rem; /*Altura da imagem*/
+        margin-top: -3rem; /*Espaçamento superior usado (-)*/
+    }
+     #item-footer > p {
+        color: rgb(108, 104, 104);
+        display: flex;  /*Jogando os itens lado a lado*/
+        justify-content:center; 
+     }
+    
+     #item-footer >  li > a {
+        color: rgb(108, 104, 104); 
+        text-decoration: none;  /*Desabilitando a decoração dos textos de Link*/
+        font-size: 15px; /*Tamanho da letra*/
+        justify-content: center;
+    
+     }
+    
+    
+     #item-footer > li > a:hover {
+        color: #415a77; /*Habilitando uma cor ao passar o mouse*/
+        transition: 0.8s; /*Tempo de transição*/
+     }
